@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Order Pizza</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Please chose your toppings and size of your pizza.</h2>
+      <form id="order">
+<!-- order -->
+        <h4>Choose your toppings(each topping is $1). </h4>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="topping" value="Cheese" id = "cheese">
+              Cheese<br>
+              <input type="checkbox" name="topping" value="Tomato" id = "tomato">
+              Tomato<br>
+              <input type="checkbox" name="topping" value="Mushroom" id = "mushroom">
+              Mushroom
+            </label>
+           </div>
+           <h4>Choose your size:</h4>
+            <div class="radio">
+              <label>
+                <input type="radio" name="size" value="Small">
+                Small
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="size" value="Medium">
+                Medium
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="size" value="Large">
+                Large
+              </label>
+            </div>
+<!-- submit btn -->
+            <button type="submit" class="btn">SUBMIT</button>
+        </form>
+<!-- output -->
+        <div id="output">
+        </div>
+      </div>
+  </body>
+</html>
