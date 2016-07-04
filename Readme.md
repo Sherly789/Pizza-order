@@ -8,7 +8,7 @@ A website for a pizza company where a user can choose one or more individual top
 ## Specifications
 | Behavior | Input Example | Output Example |
 | ------------- |:-------------:| -----:|
-| Takes number of toppings and pizza size and calculate final cost. |  number of toppings: 2, size: small| $8
+| Takes number of toppings and pizza size and calculate final cost. |  number of toppings: 2, size: small| $8.5
 
 ## Support and contact details
 
