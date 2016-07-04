@@ -1,0 +1,11 @@
+#result {
+  display: none;
+  color: blue;
+}
+
+h2 {
+  border: 2px solid black;
+  padding: 50px;
+  background-color: orange;
+  text-align: center;
+}

@@ -20,7 +20,6 @@ Order.prototype.cost = function() {
   }
 
 
-
   if (this.toppings.length === 1) {
     if (this.toppings[0].cheese === 1) {
       cost += 1.25;
@@ -35,8 +34,6 @@ Order.prototype.cost = function() {
   }
     return cost;
 };
-
-
 
 // User interface
 $(document).ready(function() {
@@ -64,10 +61,8 @@ $(document).ready(function() {
     var output = orderObject.cost();
 
 
-    console.log(orderObject);
-    console.log(toppingInput);
-    $("#output").text(output)
-
+    $("#result").show();
+    $("#output").text(output);
 
   });
 });
