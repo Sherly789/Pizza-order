@@ -1,19 +1,26 @@
-function Order(cheese, tomato, mushroom, pizzaSize) {
+function Order(pizzaSize) {
+  this.pizzaSize = pizzaSize;
+  this.topping = [];
+}
+
+function Topping(cheese, tomato, mushroom) {
   this.cheese = cheese;
   this.tomato = tomato;
   this.mushroom = mushroom;
-  this.pizzaSize = pizzaSize;
 }
 
 Order.prototype.cost = function() {
   var cost = 0;
   if (this.pizzaSize === "Small" ) {
-      cost += 6;
-  } else {
-    alert("1000");
+    cost += 6;
+  } else if (this.pizzaSize === "Medium" ) {
+    cost += 8;
+  } else if (this.pizzaSize === "Large") {
+    cost += 10;
   }
+
   return cost;
-}
+};
 
 // User interface
 $(document).ready(function() {
@@ -33,10 +40,14 @@ $(document).ready(function() {
     }
 
     var pizzaSize = $("input:radio[name=size]:checked").val();
-    var orderobject = new Order(cheese, tomato, mushroom, pizzaSize);
-    var output = orderobject.cost();
+    var orderObject = new Order(pizzaSize);
+    var toppingInput = new Topping (cheese, tomato, mushroom)
+    var output = orderObject.cost();
 
-    console.log(orderobject);
+    orderObject.topping.push(toppingInput);
+
+    console.log(orderObject);
+    console.log(toppingInput);
     $("#output").text(output)
 
 
