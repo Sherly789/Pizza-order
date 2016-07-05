@@ -19,7 +19,6 @@ Order.prototype.cost = function() {
     cost += 10;
   }
 
-
   if (this.toppings.length === 1) {
     if (this.toppings[0].cheese === 1) {
       cost += 1.25;
@@ -30,7 +29,6 @@ Order.prototype.cost = function() {
     if (this.toppings[0].mushroom === 1) {
       cost += 1.25;
     }
-
   }
     return cost;
 };
