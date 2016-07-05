@@ -14,7 +14,7 @@ A website for a pizza company where a user can choose one or more individual top
 
 Contact the authors at [farvid.sh@gmail.com]
 
-##open in browser:  https://sherly789.github.io/Order-pizza/
+##open in browser:  https://sherly789.github.io/Pizza-order/
 
 ## Technologies Used
 
